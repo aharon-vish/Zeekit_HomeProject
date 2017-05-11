@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
-import HomeComponent from './HomeComponent';
+import Home from './HomeComponent';
+import Result from './ResultComponent';
+
 require('../stylesheet.css');
 
 class App extends Component {
@@ -17,9 +19,9 @@ class App extends Component {
 
     render() {
         if(!this.state.toggleScreen){
-            return ( <HomeComponent onGridCharClick={this.onCharClick}/>)
+            return ( <Home onGridCharClick={this.onCharClick}/>)
         }else {
-            return ( <div>sdfsdfsd</div>)
+            return ( <Result/>)
         }
     }
 }

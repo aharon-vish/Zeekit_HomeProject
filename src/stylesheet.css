@@ -1,6 +1,23 @@
+body {
+    min-height: 100vh;
+    background-color: rgba(193, 23, 81, 0.2);
+}
+
 .homeStyle {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align:center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color:wheat;
+    }
+}
+
+@media only screen and (min-width: 768px) and  (max-width: 1240px){
+    body {
+        background-color:white;
+    }
 }

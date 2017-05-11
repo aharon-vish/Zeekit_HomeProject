@@ -10,7 +10,7 @@ class ReasultComponent extends Component {
     render() {
         return (
             <div className="resultStyle" style={this.props.styles}>
-<input>
+                <input/>
             </div>
         );
     }
