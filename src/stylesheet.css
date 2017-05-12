@@ -1,6 +1,8 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
 body {
     min-height: 100vh;
-    background-color: rgba(193, 23, 81, 0.2);
+    background-color: #ebebeb;
 }
 
 .homeStyle {
@@ -10,14 +12,148 @@ body {
     text-align: center;
 }
 
+.resultStyle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-wrapper button {
+    border: 0;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: all 2.0s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+.search-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center
+
+}
+
+.search-wrapper input {
+    width: 50%;
+    padding: 0.1rem 1rem;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 0.5rem 0 0 0.5rem;
+    text-transform: uppercase;
+}
+
+.search-wrapper input:focus {
+    outline: 0;
+    background: #fff
+}
+
+.search-wrapper button:hover {
+    background: #5cc924;
+}
+
+.tagManger {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    padding: 0.6rem;
+}
+
+.yourSelection {
+    display: flex;
+    flex-direction: row;
+}
+
+.yourSelection > div {
+    margin-top: 0.5%;
+}
+
+.yourSelection > ul {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0.6rem;
+}
+
+.yourSelection > ul > li {
+    border-radius: 45%;
+    background-color: white;
+    width: auto;
+    padding: 0.5rem;
+}
+
+.yourSelectionItem > span {
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.yourSelectionItem > span:hover {
+    color: red;
+}
+
+.optionalTags {
+    display: flex;
+    flex-direction: row;
+}
+
+.optionalTags > div {
+    margin-top: 0.3%;
+}
+
+.optionalTags > ul {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0.6rem;
+}
+
+.optionalTags > ul > li {
+    width: auto;
+    padding: 0.3rem;
+}
+
+.optionalTags > div {
+    margin-top: 0.5%;
+}
+
 @media only screen and (max-width: 768px) {
-    body {
-        background-color:wheat;
+    .search-wrapper button {
+        height: 2rem;
+        width: 2.5rem;
+        font: bold 1rem 'Arial', 'Tahoma';
+    }
+
+    .yourSelection > ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .optionalTags > ul {
+        display: flex;
+        flex-direction: column;
     }
 }
 
-@media only screen and (min-width: 768px) and  (max-width: 1240px){
-    body {
-        background-color:white;
+@media only screen and (min-width: 768px) {
+    .search-wrapper button {
+        height: 2.5rem;
+        width: 3.5rem;
+        font: bold 18px 'Arial', 'Tahoma';
+    }
+
+    .yourSelection > ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .optionalTags > ul {
+        display: flex;
+        flex-direction: row;
     }
 }
+
+

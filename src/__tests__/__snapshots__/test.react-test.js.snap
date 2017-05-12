@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title changes the class when hovered 1`] = `
+<h1
+  style={undefined}
+>
+  test
+</h1>
+`;
+
+exports[`Title changes the class when hovered 2`] = `
+<div
+  className="optionalTags"
+>
+  <div>
+    Optional Tags:
+  </div>
+  <ul>
+    <li>
+      Year: 
+      <select
+        data-filter-type="year"
+        onChange={undefined}
+      />
+    </li>
+    <li>
+      Type: 
+      <select
+        data-filter-type="type"
+        onChange={undefined}
+      />
+    </li>
+  </ul>
+</div>
+`;

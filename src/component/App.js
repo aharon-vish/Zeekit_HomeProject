@@ -21,7 +21,7 @@ class App extends Component {
         if(!this.state.toggleScreen){
             return ( <Home onGridCharClick={this.onCharClick}/>)
         }else {
-            return ( <Result/>)
+            return ( <Result charTerm={this.state.charTerm}/>)
         }
     }
 }
